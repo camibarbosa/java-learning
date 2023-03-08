@@ -2,7 +2,7 @@ package exercicios;
 
 import java.util.Scanner;
 
-public class SomaDoisValores {
+public class Exercicio2 {
 	public static void main(String[] args) {
 		
 		//Faça um programa para ler dois valores inteiros, 
