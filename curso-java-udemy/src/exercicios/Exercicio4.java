@@ -8,7 +8,7 @@ public class Exercicio4 {
 		/*Fazer um programa que leia o número de um funcionário, 
 		 * seu número de horas trabalhadas, o valor que recebe por hora 
 		 * e calcula o salário desse funcionário. A seguir, mostre o número e 
-		 * o salário do funcionário, com duas casas decimais.*/
+		 * o salário do funcionário, com duas casas decimais.  */
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Exercicio4 {
 		double salario = sc.nextDouble();
 		double somaSalario = numeroHorasTrabalhadas * salario;
 		System.out.printf("NUMBER = %d%n", numeroFuncionario);
-		System.out.printf("SALARY = U$ %.2f", somaSalario);
+		System.out.printf("SALARY = U$%.2f", somaSalario);
 	
 		sc.close();
 	}
