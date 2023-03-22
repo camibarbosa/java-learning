@@ -22,7 +22,6 @@ public class Exercicio22 {
 				resp = sc.next().charAt(0);
 			} while(resp != 'n');
 			
-			
 			sc.close();
 		}
 }
