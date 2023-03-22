@@ -3,7 +3,7 @@ package aulas;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class EstruturaDeRepeticaoDoWhile {
+public class DoWhile {
 	public static void main(String[] args) {
 		/*Fazer um programa para ler uma temperatura 
 		 * em Celcius e mostrar o equivalente em Fahrenheit.
