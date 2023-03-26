@@ -37,11 +37,9 @@ public class Program {
 		y.c = sc.nextDouble();
 		
 		//x.a - a acessando cada atributo do obj x
-		double p = (x.a + x.b + x.c) / 2.0;
-		double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-		
-		p = (y.a + y.b + y.c) / 2.0;
-		double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+	
+		double areaX = x.area(); //chamando o metodo area
+		double areaY = y.area();
 		
 		System.out.printf("Traingle X area: %.4f%n", areaX);
 		System.out.printf("Traingle Y area: %.4f%n", areaY);
@@ -52,7 +50,6 @@ public class Program {
 			System.out.println("Larger area: Y");
 		}
 		
-		sc.close();
-		
+		sc.close();	
 	}
 }
