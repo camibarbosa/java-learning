@@ -1,4 +1,4 @@
-package entities;
+package aulas.primeiroExOO;
 
 public class Triangle {
 	//classe - definição do tipo

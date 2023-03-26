@@ -1,9 +1,7 @@
-package application;
+package aulas.primeiroExOO;
 
 import java.util.Locale;
 import java.util.Scanner;
-
-import entities.Triangle;
 
 public class Program {
 
