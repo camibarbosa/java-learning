@@ -47,8 +47,19 @@ public class ListaLigada {
 		this.tamanho++;
 	}
 	
-	public void remover(String novoValor) {
-		
+	public void remover(String valorProcurado) {
+		Elemento anterior = null;
+		Elemento atual = this.primeiro; //recebe o primeiro valor
+		for(int i = 0; i < this.getTamanho(); i++) {
+			if(atual.getValor().equalsIgnoreCase(valorProcurado)) {
+				anterior.setProximo(atual.getProximo()); //o elemento anterio vai ter como proximo o atual.getProximo
+				atual = null;
+				this.tamanho--; //diminui o tamanho da lista
+				break;
+			}
+			anterior = atual; //o elemento anterior passa a ser o atual
+			atual = atual.getProximo();
+		}
 	}
 	
 	public Elemento get(int posicao) {

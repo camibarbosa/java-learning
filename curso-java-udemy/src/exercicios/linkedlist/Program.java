@@ -13,11 +13,20 @@ public class Program {
 		
 		System.out.println("Primeiro: " + lista.getPrimeiro().getValor());
 		System.out.println("Ultimo: " + lista.getUltimo().getValor());
-		System.out.println(lista.get(0).getValor());
-		System.out.println(lista.get(1).getValor());
-		System.out.println(lista.get(2).getValor());
-		System.out.println(lista.get(3).getValor());
-		System.out.println(lista.get(4).getValor());
+		
+		for(int i = 0; i < lista.getTamanho(); i++) {
+			System.out.println(lista.get(i).getValor());
+		}
 	
+		//removendo o estado
+		lista.remover("CE");
+		
+		System.out.println("Removeu estado CE");
+		
+		for(int i = 0; i < lista.getTamanho(); i++) {
+			System.out.println(lista.get(i).getValor());
+		}
+
+		
 	}
 }
