@@ -52,8 +52,21 @@ public class ListaLigada {
 		Elemento atual = this.primeiro; //recebe o primeiro valor
 		for(int i = 0; i < this.getTamanho(); i++) {
 			if(atual.getValor().equalsIgnoreCase(valorProcurado)) {
-				anterior.setProximo(atual.getProximo()); //o elemento anterio vai ter como proximo o atual.getProximo
-				atual = null;
+				//se existe apenas 1 elemento 
+				if (this.tamanho == 1) {
+					this.primeiro = null;
+					this.ultimo = null;
+					
+				} else if(atual == primeiro) {//remove o primeiro elemento
+					this.primeiro = atual.getProximo(); //o primeiro da lista vai ser o proximo atual 
+					atual.setProximo(null);
+				} else if (atual == ultimo) {
+					this.ultimo = anterior; //o ultimo vai ser o anterior do atual
+					anterior.setProximo(null); //o proximo não existe
+				} else {
+					anterior.setProximo(atual.getProximo()); //o elemento anterio vai ter como proximo o atual.getProximo
+					atual = null;
+				}
 				this.tamanho--; //diminui o tamanho da lista
 				break;
 			}

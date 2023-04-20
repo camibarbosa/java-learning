@@ -20,8 +20,21 @@ public class Program {
 	
 		//removendo o estado
 		lista.remover("CE");
-		
 		System.out.println("Removeu estado CE");
+		
+		lista.adicionar("AL");
+		System.out.println("Adicionou estado AL");
+		
+		lista.remover("PB");
+		lista.remover("AL");
+		lista.remover("RJ");
+		lista.remover("SP");
+		lista.remover("AM");
+		System.out.println("Tamanho: " + lista.getTamanho());
+		
+		lista.adicionar("MG");
+		System.out.println("Adicionou estado MG");
+		System.out.println("Tamanho: " + lista.getTamanho());
 		
 		for(int i = 0; i < lista.getTamanho(); i++) {
 			System.out.println(lista.get(i).getValor());
