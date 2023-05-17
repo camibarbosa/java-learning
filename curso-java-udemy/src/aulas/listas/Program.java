@@ -11,6 +11,7 @@ public class Program {
 		//Para declarar uma interface é necessario colocar uma classe
 		//que implementa a interface (ex: ArrayList)
 		List<String> list = new ArrayList<>();
+		
 		list.add("Chuu");
 		list.add("Mingi");
 		list.add("Jackson");
